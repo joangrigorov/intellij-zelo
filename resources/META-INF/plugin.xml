@@ -1,0 +1,26 @@
+<idea-plugin version="2">
+  <id>org.intellij.zelo</id>
+  <name>zelo</name>
+  <version>1.0</version>
+  <vendor email="joan.grigorov@gmail.com" url="http://www.bgscripts.com">Yoan-Alexander Grigorov</vendor>
+
+  <description><![CDATA[
+      IntelliJ IDEA plugin for the Zelo programming language
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="org.zelo.intellij.ZeloFileTypeFactory"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
